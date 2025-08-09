@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth zoom animation for hero */
+@keyframes kenburns {
+  0% { transform: scale(1) translate(0, 0); }
+  100% { transform: scale(1.1) translate(0, 0); }
+}
+
+.hero-kenburns {
+  animation: kenburns 18s ease-in-out forwards;
+  will-change: transform;
+}
+
+.text-shadow-xl {
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.text-shadow {
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
